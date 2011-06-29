@@ -1,15 +1,42 @@
-cassowary
-===========
+= cassowary
 
-Cassowary is an incremental constraint solving toolkit that efficiently solves systems of linear equalities and inequalities. Constraints may be either requirements or preferences. Client code specifies the constraints to be maintained, and the solver updates the constrained variables to have values that satisfy the constraints. Version 0.50 of the solving toolkit adds support for a one-way finite domain subsolver.
+* http://github.com/#{github_username}/#{project_name}
 
-Author
-------
+== DESCRIPTION:
 
-Original author: Sebastian Feuerstack
+Cassowary is an incremental constraint solving toolkit that efficiently 
+solves systems of linear equalities and inequalities. Constraints may be 
+either requirements or preferences. Client code specifies the constraints 
+to be maintained, and the solver updates the constrained variables to have 
+values that satisfy the constraints. Version 0.50 of the solving toolkit 
+adds support for a one-way finite domain subsolver.
 
-License
--------
+== FEATURES/PROBLEMS:
+
+* FIX (list of features or problems)
+
+== SYNOPSIS:
+
+  FIX (code sample of usage)
+
+== REQUIREMENTS:
+
+Requires libcassowary debian package available for
+Ubuntu Lucid 10.0.4_02 LTS 
+
+http://packages.multi-access.de/lucid
+
+or build yourself. Sourcecode is available from original site
+
+http://www.cs.washington.edu/research/constraints/cassowary/
+
+Copyright Greg J. Badros, Alan Borning
+
+== INSTALL:
+
+sudo gem install cassowary
+
+== LICENSE:
 
 Licensed under the Lesser/Library GPL v2.1 or any version above.
 
@@ -33,3 +60,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

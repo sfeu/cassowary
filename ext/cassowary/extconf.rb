@@ -10,5 +10,6 @@ $INCFLAGS << " -I/usr/include/cassowary "
 
 $LIBS << " -lcassowary"
 
-dir_config('cassowary')
-create_makefile('cassowary')
+dir_config("cassowary")
+create_makefile("cassowary")
+
