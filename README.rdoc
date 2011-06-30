@@ -1,6 +1,6 @@
 = cassowary
 
-* http://github.com/#{github_username}/#{project_name}
+* http://github.com/sfeu/cassowary
 
 == DESCRIPTION:
 
@@ -11,26 +11,48 @@ to be maintained, and the solver updates the constrained variables to have
 values that satisfy the constraints. Version 0.50 of the solving toolkit 
 adds support for a one-way finite domain subsolver.
 
+This project is concerned with offering a ruby interface for the
+original implementation of cassowary in C.
+
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+Please consider the current version as software that is still not finished.
+
+Currently we can only say that "it works for us"...
+
+We are using this constraint solver to generate graphical user interfaces
+with the Multimodal INTeraction framework (MINT).
+
+See http://www.multi-access.de
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+require "rubygems"
+require "cassowary"
+solver = Cassowary::ClSimplexSolver.new
+
+size = Cassowary::ClPoint.new()
+
+solver.AddConstraint(ClLinearEquation.new(size.X,ClLinearExpression.new(10),Cassowary.ClsStrong))
+solver.AddConstraint(ClLinearInequality.new(size.Y,CnGEQ,ClLinearExpression.new(0),Cassowary.ClsStrong))
 
 == REQUIREMENTS:
 
 Requires libcassowary debian package available for
-Ubuntu Lucid 10.0.4_02 LTS 
 
-http://packages.multi-access.de/lucid
+Ubuntu Lucid 10.0.4_02 LTS 64 Bit
+http://packages.multi-access.de/lucid/libcassowary0_0.70-1_amd64.deb
+
+or
+
+Ubuntu Lucid 10.0.4_02 LTS 64 Bit
+http://packages.multi-access.de/lucid/libcassowary0_0.70-1_i386.deb
 
 or build yourself. Sourcecode is available from original site
 
 http://www.cs.washington.edu/research/constraints/cassowary/
 
-Copyright Greg J. Badros, Alan Borning
+Copyright Cassowary Constraint Solver: Greg J. Badros, Alan Borning
 
 == INSTALL:
 
