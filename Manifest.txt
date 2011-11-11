@@ -4,7 +4,9 @@ Manifest.txt
 PostInstall.txt
 README.rdoc
 Rakefile
-ext/cassowary/cassowary.so
+cassowary.gemspec
+ext/cassowary/cassowary.i
+ext/cassowary/cassowary_wrap.cxx
 ext/cassowary/extconf.rb
 lib/cassowary.rb
 script/console
