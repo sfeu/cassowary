@@ -43,7 +43,9 @@ Ubuntu LTS Lucid 10.04 and Precise 12.04. Just add our PPA by
 doing the following steps:
 
 sudo add-apt-repository ppa:sfeu/ppa
+
 sudo apt-get update
+
 sudo apt-get install libcassowary0
 
 or build yourself. The source code is available from the original site
