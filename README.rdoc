@@ -38,17 +38,15 @@ solver.AddConstraint(ClLinearInequality.new(size.Y,CnGEQ,ClLinearExpression.new(
 
 == REQUIREMENTS:
 
-Requires libcassowary debian package available for
+Requires the libcassowary0 debian package that we packaged for
+Ubuntu LTS Lucid 10.04 and Precise 12.04. Just add our PPA by
+doing the following steps:
 
-Ubuntu Lucid 10.0.4_02 LTS 64 Bit
-http://packages.multi-access.de/lucid/libcassowary0_0.70-1_amd64.deb
+sudo add-apt-repository ppa:sfeu/ppa
+sudo apt-get update
+sudo apt-get install libcassowary0
 
-or
-
-Ubuntu Lucid 10.0.4_02 LTS 64 Bit
-http://packages.multi-access.de/lucid/libcassowary0_0.70-1_i386.deb
-
-or build yourself. Sourcecode is available from original site
+or build yourself. The source code is available from the original site
 
 http://www.cs.washington.edu/research/constraints/cassowary/
 
@@ -62,7 +60,7 @@ sudo gem install cassowary
 
 Licensed under the Lesser/Library GPL v2.1 or any version above.
 
-Copyright (c) 2011 Sebastian Feuerstack
+Copyright (c) 2011-2012 Sebastian Feuerstack
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
